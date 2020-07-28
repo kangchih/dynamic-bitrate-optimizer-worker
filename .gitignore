@@ -1,0 +1,17 @@
+.idea/
+.idea/*
+*/idea/
+*.xml
+*.iml
+/data/
+/video_cache/
+/workers/__pycache__/
+/workers/vmaf/__pycache__/
+*/__pycache__/
+__pycache__/utils.cpython-37.pyc
+__pycache__/config.cpython-37.pyc
+.log/
+log/
+*.pyc
+.idea/workspace.xml
+*.mp4

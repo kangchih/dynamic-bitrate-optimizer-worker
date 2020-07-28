@@ -1,0 +1,59 @@
+#worker:
+#    build: .
+#    environment:
+#        - ENV=dev
+#        - TYPE=webp
+#        - SECRET_FILE=./config/dev_webp_1
+#
+#    volumes:
+#        - ".:/app"
+#    links:
+#        - rabbitmq
+#        - mysql
+#
+#rabbitmq:
+#    image: rabbitmq:3-management
+#    ports:
+#        - 5672:5672
+#        - 15672:15672
+#
+#mysql:
+#    image: mysql:5.7
+#    environment:
+#        - MYSQL_ROOT_PASSWORD=user_data_im
+#        - MYSQL_USER=im_data_user
+#        - MYSQL_PASS=user_data_im
+#    ports:
+#        - 3306:3306
+#    volumes:
+#        - /tmp/mysql:/var/lib/mysql
+
+
+#dbo:
+#    build: .
+#    environment:
+#        - ENV=dev
+#        - TYPE=dbo
+#        - SECRET_FILE=./config/dev_dbo_1
+#    volumes:
+#        - ".:/app"
+
+#watermark:
+#    build: .
+#    environment:
+#        - ENV=dev
+#        - TYPE=watermark
+#        - SECRET_FILE=./config/dev_watermark_test
+#
+#    volumes:
+#     - ".:/app"
+
+video_info:
+    build: .
+    environment:
+        - ENV=dev
+        - TYPE=videoinfo
+        - SECRET_FILE=./config/dev_videoinfo_test
+
+    volumes:
+     - ".:/app"

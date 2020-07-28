@@ -1,0 +1,6 @@
+kombu==4.6.0
+requests==2.21.0
+boto3==1.9.138
+mysqlclient==1.4.2.post1
+face_recognition
+apscheduler
