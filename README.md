@@ -17,9 +17,6 @@ The python worker process short videos to add watermark, webp files, and parse t
 
  5. 上傳最佳化的mp4檔案至相對應的S3 bucket, 更新DB(field: dbo_url)。
 
-## Four Environment Variable Sets 
-
-## Environment Variables For Webp
   
 ### Webp Queue Worker
 
